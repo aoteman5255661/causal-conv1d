@@ -171,9 +171,8 @@ if not SKIP_CUDA_BUILD:
                 )
                     
         cc_flag.append("-gencode")
-        cc_flag.append("arch=compute_53,code=sm_53")
-        cc_flag.append("-gencode")
-        cc_flag.append("arch=compute_62,code=sm_60")
+        cc_flag.append("arch=compute_60,code=sm_60")
+
 
 
     # HACK: The compiler flag -D_GLIBCXX_USE_CXX11_ABI is set to be the same as
